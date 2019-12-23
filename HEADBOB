@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int t;
+	scanf("%d",&t);
+	for ( int i=0 ; i<t ; i++ )
+	{
+		int n, Y=0, I=0;
+		scanf("%d",&n);
+		char c[n];
+		scanf("%s",c);
+		for ( int j=0 ; j<n ; j++ )
+		{
+			if ( c[j] == 'Y')
+				Y++;
+			else if ( c[j]== 'I')
+				I++;
+		}
+		if ( Y!=0 )
+			printf("NOT INDIAN\n");
+		else if( I!=0 )
+			printf("INDIAN\n");
+		else
+			printf("NOT SURE\n");
+	}
+	
+	return 0;
+}
